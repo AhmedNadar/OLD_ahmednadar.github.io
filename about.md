@@ -10,24 +10,13 @@ image:
 share: true
 ---
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory...
 
-## What HPSTR brings to the table:
+As a Developer and Designer, I enjoy working with people who are professional in their approach. I am proud of my teamwork and communication skills, as I believe these are key skills needed to deliver a successful end product. A lifelong learner and continue to develop, upgrade my skills and learn from my encounters with others and challenge myself to do my best.
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Background image support.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Comments powered by [Disqus](http://disqus.com) if you choose to enable.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy
-* [Grunt](http://gruntjs.com) build script for easy theme development
+A good team player, competent time management and very dependable under pressure who thrives on creating engaging creative solutions. I committed to having an impact on the future of any company that I work for with innovative ideas and enthusiasm.
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup" class="btn btn-info">Install the Theme</a></div>
+Looking for a suitable position within a company where outstanding performance is recognized and where I can work on a variety of high profile projects.
 
-[^1]: Example: *domain.com/category-name/post-title*
+Please check [my portfolio on Heroku](http://ahmednadar.herokuapp.com/) where I show the latest projects I [worked](http://ahmednadar.herokuapp.com/work) on.
+
+Ahmed!

@@ -1,0 +1,149 @@
+# Site settings
+title: Thinking Out Load
+# email: ahmednadar@gmail.com
+description: "Iterating through a collection of thoughts out loud..."
+logo:             site-logo.png
+disqus_shortname: disqus_ahmednadar
+search:           true
+baseurl: ""
+url: "http://ahmednadar.github.io/"
+subscribe_rss: http://feeds.feedburner.com/ThinkingOutLoad
+
+# Build settings
+# permalink: /blog/:year/:month/:day/:title/
+permalink: /:day/:month/:year/:title/
+code_dir: downloads/code
+category_dir: categories
+markdown: kramdown
+kramdown:
+use_coderay: true
+coderay:
+  coderay_line_numbers: table
+  coderay_css: class     
+paginate: 10          # Posts per page on the blog index
+pagination_dir: #blog  # Directory base for pagination URLs eg. /blog/page/2/
+recent_posts: 5       # Posts in the sidebar Recent Posts section
+excerpt_link: "Read on &rarr;"  # "Continue reading" link text at the bottom of excerpted articles
+titlecase: false       # Converts page and post titles to titlecase
+
+
+# Owner/author information
+owner:
+name:           Ahmed Nadar
+avatar:         bio-photo.jpg
+email:          ahmednadar@gmail.com
+# Social networking links used in footer. Update and remove as you like.
+home: index.html
+twitter:  ahmednadar        
+facebook:       
+github:   ahmednadar      
+stackexchange:  egyamado
+linkedin:       
+instagram:      
+flickr:         
+tumblr:
+flattr_user: ahmednadar        
+# For Google Authorship https://plus.google.com/authorship
+google_plus:    
+
+# Analytics and webmaster tools stuff goes here
+analytics :
+provider : google 
+google : 
+    tracking_id : 'UA-46048477-1'   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:    
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+- title: Home
+  url: /
+- title: About
+  url: /about/
+- title: Blog
+  url: /blog/
+- title: projects
+  url: /projects/
+
+
+
+=====================================================================================
+
+
+# Site settings
+title:            Thinking Out Load
+description:      Iterating through a collection of thoughts out loud...
+disqus_shortname: disqus_ahmednadar
+logo:             site-logo.png
+search:           true
+subscribe_rss:    http://feeds.feedburner.com/ThinkingOutLoad
+#Your site's domain goes here. Leave localhost server or blank when working locally.
+url:              http://ahmednadar.github.io/
+
+# Owner/author information
+owner:
+  name:           Ahmed Nadar
+  avatar:         avatar.jpg
+  bio:            "Your bio goes here. It shouldn't be super long but a good two sentences or two should suffice."
+  email:          ahmednadar@email.com
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        ahmednadar
+  facebook:       
+  github:         ahmednadar
+  stackexchange:  egyamado
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  flattr_user: ahmednadar
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:   
+
+# Background image to be tiled on all pages
+background: abstract-10.jpg
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   "UA-46048477-1"
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: Theme Setup
+    url: /theme-setup
+  - title: External Link
+    url: http://mademistakes.com
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+highlighter: pygments
+markdown:    kramdown
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
+
+# Amount of post to show on home page
+paginate: 5
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]

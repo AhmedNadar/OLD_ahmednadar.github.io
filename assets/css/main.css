@@ -3798,7 +3798,7 @@ body {
   margin: 10px 20px;
   font-size: 28px;
   font-size: 1.75rem;
-  font-weight: 700;
+  font-weight: 100;
   color: #555555;
 }
 
@@ -3811,8 +3811,8 @@ body {
 
 @media only screen and (min-width: 62.5em) {
   .header-title h1 {
-    font-size: 60px;
-    font-size: 3.75rem;
+    font-size: 40px;
+    font-size: 2.5rem;
   }
 }
 
@@ -3826,8 +3826,8 @@ body {
 
 @media only screen and (min-width: 48em) {
   .header-title h2 {
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 14px;
+    font-size: 0.875rem;
   }
 }
 
@@ -3836,7 +3836,7 @@ body {
   top: 0;
   display: table;
   width: 100%;
-  height: 400px;
+  height: 100px;
   margin-top: 0;
   overflow: hidden;
 }
@@ -3851,8 +3851,8 @@ body {
 .feature .header-title h1 {
   margin: 10px;
   margin: 10px 60px;
-  font-weight: 700;
-  color: #ffffff;
+  font-weight: 100;
+  color: #000000;
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
 }
 
@@ -3866,8 +3866,9 @@ body {
 
 .feature .header-title h2 {
   margin: 0;
-  color: #ffffff;
-  text-transform: uppercase;
+  font-style: italic;
+  color: #bbbbbb;
+  text-transform: none;
 }
 
 @media only screen and (min-width: 48em) {
@@ -3881,8 +3882,8 @@ body {
   top: -50%;
   left: -50%;
   width: 200%;
-  height: 200%;
-  min-height: 400px;
+  height: 100%;
+  min-height: 100px;
   overflow: hidden;
 }
 
@@ -3892,7 +3893,6 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(34, 34, 34, 0.3);
   content: '';
 }
 
@@ -4275,14 +4275,14 @@ body {
 
 @media only screen and (min-width: 62.5em) {
   #post-index article {
-    padding: 50px 80px;
+    padding: 30px;
     margin-bottom: 30px;
   }
 }
 
 .footer-wrapper {
   margin: 2em auto;
-  color: #555555;
+  color: #bbbbbb;
   text-align: center;
   *zoom: 1;
 }
@@ -4299,7 +4299,7 @@ body {
 }
 
 .footer-wrapper a {
-  color: #555555;
+  color: #bbbbbb;
 }
 
 .socialcount {
