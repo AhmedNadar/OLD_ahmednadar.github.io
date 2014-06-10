@@ -3,7 +3,8 @@ layout: post
 title: "Learning the Right Way"
 date: 2013-08-22 22:50:37 -0500
 comments: true
-categories: [learn, rails, ruby]
+tags: [Learn, Rails, Ruby]
+
 ---
 
 <p>When i decide to learn Ruby and Ruby on Rails, I have done good search for what is the best way to learn RoR. The community online is marvellous. Since RoR is kind of new kid in the programming framework area, I have found many resources and different way to learn. </p>

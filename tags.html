@@ -9,7 +9,8 @@ description: "An archive of posts sorted by tag."
 {% assign tags_list = site.tags %}  
   {% if tags_list.first[0] == null %}
     {% for tag in tags_list %} 
-    	<li><a href="#{{ tag }}" class="tag">{{ tag }} <span>{{ site.tags[tag].size }}</span></a></li>
+    	<li><a href="#{{ tag }}" class="tag">{{ tag }} <span>{{ site.tags[tag].size }}</span>
+    		<i class="icon-github icon-2x"></i></a></li>
     {% endfor %}
   {% else %}
     {% for tag in tags_list %} 
@@ -21,13 +22,13 @@ description: "An archive of posts sorted by tag."
 
 {% for tag in site.tags %} 
 	<article>
-	<h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+	<h2 id="{{ tag[0] }}"><i class="icon-tag"></i>&nbsp; &nbsp;{{ tag[0] }}</h2>
 		<ul>
 		{% assign pages_list = tag[1] %}  
 		{% for post in pages_list %}
 			{% if post.title != null %}
 			{% if group == null or group == post.group %}
-				<li class="entry-title"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+				<li class="entry-title"><i class="icon-link"></i>&nbsp; &nbsp;<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
 			{% endif %}
 			{% endif %}
 		{% endfor %}

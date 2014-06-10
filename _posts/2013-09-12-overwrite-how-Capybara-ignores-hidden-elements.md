@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Overwrite how Capybara ignores hidden elements"
-date: 2014-01-10 11:22:54 -0400
+date: 2013-09-12 11:22:54 -0400
 comments: true
-categories: [Capybara, Rspec, Rails, Test, TDD]
+tags: [Capybara, Rspec, Rails, Test, TDD]
 ---
 
 Working with [Caybara](http://rubydoc.info/github/jnicklas/capybara/master) is fun and joy for me as an early web designer and front-end developer. I always care about the user experience -[UX](https://en.wikipedia.org/wiki/User_experience)- and how user would interact with the page.
@@ -78,4 +78,4 @@ end
 
 If you chose rack test as your test driver then you would face issues with elements visibility. I would recommend using [Selenium](https://github.com/jnicklas/capybara#selenium), where it has no issue with visibility and it has Firefox already installed and you are ready to test.
 
-Happy coding :)
+Happy Coding, eh! ;)

@@ -3743,7 +3743,7 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  background-color: #e8e8e8;
+  background-color: #fafafa;
 }
 
 .entry,
@@ -3790,7 +3790,7 @@ body {
 }
 
 .header-title {
-  margin: 30px 0 0;
+  margin: 18px 0 0;
   text-align: center;
 }
 
@@ -3798,7 +3798,10 @@ body {
   margin: 10px 20px;
   font-size: 28px;
   font-size: 1.75rem;
-  font-weight: 100;
+  color: #000000;
+}
+
+.header-title h1 a {
   color: #555555;
 }
 
@@ -3813,6 +3816,8 @@ body {
   .header-title h1 {
     font-size: 40px;
     font-size: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
   }
 }
 
@@ -3820,8 +3825,9 @@ body {
   margin: 0;
   font-size: 18px;
   font-size: 1.125rem;
-  color: #888888;
-  text-transform: uppercase;
+  font-style: italic;
+  color: #bbb;
+  text-transform: none;
 }
 
 @media only screen and (min-width: 48em) {
@@ -3851,13 +3857,14 @@ body {
 .feature .header-title h1 {
   margin: 10px;
   margin: 10px 60px;
+  font-size: 2.5rem;
   font-weight: 100;
   color: #000000;
   text-shadow: 1px 1px 4px rgba(34, 34, 34, 0.6);
 }
 
 .feature .header-title h1 a {
-  color: #ffffff;
+  color: #000000;
 }
 
 @media only screen and (min-width: 62.5em) {
@@ -4025,7 +4032,7 @@ body {
   #post .entry-content,
   #page .entry-content {
     max-width: 800px;
-    padding: 50px 80px;
+    padding: 30px;
     margin: 50px auto 30px auto;
   }
   #post .entry-content > p:first-child,
@@ -4280,6 +4287,19 @@ body {
   }
 }
 
+#post-index article ul li {
+  margin: 5px 0;
+  list-style-type: none;
+}
+
+#post-index article ul li a {
+  text-decoration: underline;
+}
+
+#post-index article ul li a:hover {
+  text-decoration: none;
+}
+
 .footer-wrapper {
   margin: 2em auto;
   color: #bbbbbb;
@@ -4300,6 +4320,14 @@ body {
 
 .footer-wrapper a {
   color: #bbbbbb;
+}
+
+.footer-wrapper .social-icons {
+  margin: 15px 0;
+}
+
+.footer-wrapper .social-icons a {
+  margin: 0 10px;
 }
 
 .socialcount {
@@ -4374,4 +4402,26 @@ body {
 #goog-wm-sb:hover {
   color: #222222;
   background-color: #ffffff;
+}
+
+header.masthead {
+  display: block;
+  width: 250px;
+  margin: auto;
+  text-align: center;
+}
+
+header.masthead h1 {
+  margin: 0 0 30px 0;
+  font-weight: normal;
+}
+
+header.masthead .wrap a {
+  display: block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  background-size: 100%;
+  border-radius: 100%;
+  box-shadow: 0 0 7px 0, 0 0 0 rgba(0, 0, 0, 0.1);
 }

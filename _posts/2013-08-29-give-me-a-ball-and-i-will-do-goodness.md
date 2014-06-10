@@ -3,7 +3,7 @@ layout: post
 title: "Give Me a Ball and I Will Do Goodness"
 date: 2013-08-29 23:28:11 -0500
 comments: true
-categories: learn
+tags: Learn
 ---
 
 <p>Want to make people run? Don’t give them a badge for running. Give them a ball and shove four sticks in the ground. They’ll run around the field chasing the ball (and each other) for ages. The experience is intrinsically challenging and amusing, and the running is a by-product. Games rely on dynamics like these and rules to generate the conditions for positive engagement.</p>
