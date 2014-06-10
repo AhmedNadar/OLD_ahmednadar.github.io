@@ -1,7 +1,7 @@
 # Site settings
 title:            Thinking Out Load
 description:      Iterating through a collection of thoughts out loud
-disqus_shortname: dahmednadar
+disqus_shortname: ahmednadar
 logo:             site-logo.png
 search:           true
 subscribe_rss:    http://feeds.feedburner.com/ThinkingOutLoad 
