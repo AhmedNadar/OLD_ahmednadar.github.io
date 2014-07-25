@@ -13,7 +13,7 @@ While I'm I was working on the designing an existing form, I found it's been con
 
 While the user working on filling each input element such as, 'first name', 'last name'... and so on. User can't click on the Enter key to submit the form. Here is an example for a very simple form:
 
-```
+{% highlight html %}
 <form id="contact_form" class="contact_form" method="post" action="welcome.html">
 	<div class="first_name">
 		<input type="text" name="f_name" id="f_name" class="fn_textbox">
@@ -26,7 +26,7 @@ While the user working on filling each input element such as, 'first name', 'las
 	</div>
 	<div class="submit" id="submit_form">Submit</div>
 </form>
-```
+{% endhighlight %}
 
 As you may notice that submit button is a 'DIV'. Using its ID, a jQuery function triggers it on a 'click' event (not the Enter key) and submits the form.
 
@@ -41,15 +41,13 @@ In order to give user the ability to click the Enter key on the keyboard to subm
 Here is simple and easy solution.
 
 {% highlight javascript %}
-
-	<script type="text/javascript">
-  		$("#contact_form *").keypress(function (e) {
-    		if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-		      	$(this).parents('#contact_form').find('#submit_form').eq(0).focusin().click();
-    		}
-	  	});
-	</script>
-
+<script type="text/javascript">
+		$("#contact_form *").keypress(function (e) {
+  		if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
+	      	$(this).parents('#contact_form').find('#submit_form').eq(0).focusin().click();
+  		}
+  	});
+</script>
 {% endhighlight %}
 
 
