@@ -1,0 +1,289 @@
+<!doctype html>
+  <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+  <!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+  <!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+  <!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"><!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+<title>Overwrite how Capybara ignores hidden elements &#8211; Thinking Out Load</title>
+<meta name="description" content="Iterating through a collection of thoughts out loud">
+<meta name="keywords" content="Capybara, Rspec, Rails, Test, TDD">
+
+<!-- Twitter Cards -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://ahmednadar.github.io/images/site-logo.png">
+<meta name="twitter:title" content="Overwrite how Capybara ignores hidden elements">
+<meta name="twitter:description" content="Iterating through a collection of thoughts out loud">
+<meta name="twitter:creator" content="@ahmednadar">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Overwrite how Capybara ignores hidden elements">
+<meta property="og:description" content="Iterating through a collection of thoughts out loud">
+<meta property="og:url" content="http://ahmednadar.github.io/12/09/2013/overwrite-how-Capybara-ignores-hidden-elements/">
+<meta property="og:site_name" content="Thinking Out Load">
+
+
+
+
+
+<link rel="canonical" href="http://ahmednadar.github.io/12/09/2013/overwrite-how-Capybara-ignores-hidden-elements/">
+<link href="http://ahmednadar.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Thinking Out Load Feed">
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://ahmednadar.github.io/assets/css/main.min.css">
+<!-- Webfonts -->
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic" rel="stylesheet" type="text/css">
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- Load Modernizr -->
+<script src="http://ahmednadar.github.io/assets/js/vendor/modernizr-2.6.2.custom.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="http://ahmednadar.github.io/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="http://ahmednadar.github.io/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="http://ahmednadar.github.io/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://ahmednadar.github.io/images/apple-touch-icon-72x72-precomposed.png">
+<!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://ahmednadar.github.io/images/apple-touch-icon-114x114-precomposed.png">
+<!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://ahmednadar.github.io/images/apple-touch-icon-144x144-precomposed.png">
+
+
+
+  </head>
+  <body id="post">
+    <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+    <nav id="dl-menu" class="dl-menuwrapper" role="navigation">
+	<button class="dl-trigger">Open Menu</button>
+	<ul class="dl-menu">
+		<li><a href="http://ahmednadar.github.io">Home</a></li>
+		<li>
+			<a href="#">About</a>
+			<ul class="dl-submenu">
+				<li>
+					<img src="http://ahmednadar.github.io/images/avatar.png" alt="Ahmed Nadar photo" class="author-photo">
+					<h4>Ahmed Nadar</h4>
+					<p>Web developer and designer. hobbyist cooking, gardening, photographer, and family man.</p>
+				</li>
+				<li><a href="http://ahmednadar.github.io/about/">Read More</a></li>
+				
+				<li>
+					<a href="http://twitter.com/ahmednadar"><i class="icon-twitter"></i> Twitter</a>
+				</li>
+				
+				
+				
+				<li>
+					<a href="http://github.com/ahmednadar"><i class="icon-github"></i> GitHub</a>
+				</li>
+				<li>
+					<a href="http://stackoverflow.com/users/66493/egyamado"><i class="icon-stackexchange"></i> Stackexchange</a>
+				</li>
+				
+				
+				
+			</ul><!-- /.dl-submenu -->
+		</li>
+		<li>
+			<a href="#">Archive</a>
+			<ul class="dl-submenu">
+				<li><a href="http://ahmednadar.github.io/posts/">All Posts</a></li>
+				<li><a href="http://ahmednadar.github.io/tags/">All Tags</a></li>
+			</ul>
+		</li>
+		
+	</ul><!-- /.dl-menu -->
+</nav><!-- /.dl-menuwrapper -->
+
+    <div class="entry-header feature">
+  <div class="entry-image">
+  </div><!-- /.entry-image -->
+  <div class="header-title">
+    <div class="header-title-wrap">
+      <h1><a href="http://ahmednadar.github.io">Thinking Out Load</a></h1>
+      <h2>Iterating through a collection of thoughts out loud</h2>
+    </div><!-- /.header-title-wrap -->
+  </div><!-- /.header-title -->
+</div><!-- /.entry-header -->
+    <div id="main" role="main">
+      <article class="hentry">
+        <div class="entry-content">
+        <header class="header-title">
+          <div class="header-title-wrap">
+            
+              <h1 class="entry-title"><a href="http://ahmednadar.github.io/12/09/2013/overwrite-how-Capybara-ignores-hidden-elements/" rel="bookmark" title="Overwrite how Capybara ignores hidden elements">Overwrite how Capybara ignores hidden elements</a></h1>
+            
+            <h2>September 12, 2013</h2>
+          </div><!-- /.header-title-wrap -->
+        </header>
+          <p>Working with <a href="http://rubydoc.info/github/jnicklas/capybara/master">Caybara</a> is fun and joy for me as an early web designer and front-end developer. I always care about the user experience -<a href="https://en.wikipedia.org/wiki/User_experience">UX</a>- and how user would interact with the page.</p>
+
+<p>While I was working on simple test using Capybara, the test didn’t pass although I have what is require for test to pass. Here is my test:</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">feature</span> <span class="s2">&quot;view home page&quot;</span> <span class="k">do</span>
+ 		<span class="n">scenario</span> <span class="s2">&quot;user see page title&quot;</span> <span class="k">do</span>
+ 	  	<span class="n">visit</span> <span class="n">root_path</span>
+ 	   	<span class="n">expect</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">have_css</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="ss">text</span><span class="p">:</span> <span class="s1">&#39;Birds&#39;</span>
+		<span class="k">end</span> 
+	<span class="k">end</span></code></pre></div>
+
+<p>In my test I’m expecting the page to have the title element with value of “<strong>Bird</strong>”. But when I run my test, it faild:</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">view</span> <span class="n">home</span> <span class="n">page</span>
+  <span class="n">user</span> <span class="n">sees</span> <span class="n">relevant</span> <span class="n">information</span> <span class="p">(</span><span class="no">FAILED</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+
+<span class="ss">Failures</span><span class="p">:</span>
+
+  <span class="mi">1</span><span class="p">)</span> <span class="n">view</span> <span class="n">home</span> <span class="n">page</span> <span class="n">user</span> <span class="n">see</span> <span class="n">page</span> <span class="n">title</span>
+     <span class="no">Failure</span><span class="o">/</span><span class="ss">Error</span><span class="p">:</span> <span class="n">expect</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">have_css</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="ss">text</span><span class="p">:</span> <span class="s1">&#39;Todos&#39;</span>
+     <span class="no">Capybara</span><span class="o">::</span><span class="ss">ExpectationNotMet</span><span class="p">:</span>
+       <span class="n">expected</span> <span class="n">to</span> <span class="n">find</span> <span class="n">css</span> <span class="s2">&quot;title&quot;</span> <span class="n">with</span> <span class="n">text</span> <span class="s2">&quot;Birds&quot;</span> <span class="n">but</span> <span class="n">there</span> <span class="n">were</span> <span class="n">no</span> <span class="n">matches</span><span class="o">.</span> <span class="no">Also</span> <span class="n">found</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">which</span> <span class="n">matched</span> <span class="n">the</span> <span class="n">selector</span> <span class="n">but</span> <span class="ow">not</span> <span class="n">all</span> <span class="n">filters</span><span class="o">.</span>
+     <span class="c1"># ./spec/integeration/view_home_spec.rb:6:in `block (2 levels) in &lt;top (required)&gt;&#39;</span></code></pre></div>
+
+<p>This is strange since I know the page has the <strong>Birds</strong> title. </p>
+
+<h3 id="background">Background</h3>
+
+<p>Capybara has an interesting option (<a href="https://github.com/jnicklas/capybara/blob/master/lib/capybara.rb#L20">Capybara.ignore_hidden_elements</a>) that configures the default query behaviour of finding nodes within the DOM. The default option value is ‘<a href="https://github.com/jnicklas/capybara/blob/master/lib/capybara.rb#L352">true</a>’, but we can overwrite the that value by passing <code>visible: false|true</code>. But it’s not that easy because Capybara support different <a href="https://github.com/jnicklas/capybara#drivers">drivers</a> such as <code>RackTest</code> and <code>Selenium</code>. Each one has it’s <code>visible?</code> method; which means each driver has it’s implementation for how to detect when an element on the page is visible or not. </p>
+
+<p>Capybara uses the <code>rack_test</code> driver by <a href="https://github.com/jnicklas/capybara/blob/master/lib/capybara.rb#L50">default</a>. But it’s not that good, here is why from the documantation:</p>
+
+<blockquote>
+  <p>Rack_test driver is fast but limited: it does not support JavaScript, nor is it able to access HTTP resources outside of your Rack application, such as remote APIs and OAuth services. To get around these limitations, you can set up a different default driver for your features.</p>
+</blockquote>
+
+<p>This limitation causes the <code>visible?</code> method to only look for elements with <code>style="display: none"</code> attribute. Which means we have to query selectors to find page nodes.</p>
+
+<h3 id="havecss-with-visible-option">have_css with visible option</h3>
+
+<p>The <a href="http://rubydoc.info/github/jnicklas/capybara/master/Capybara/RSpecMatchers:have_css">have_css</a> matcher is an instance method of <a href="http://rubydoc.info/github/jnicklas/capybara/master/frames/Capybara/RSpecMatchers">RSpecMatchers</a>, which is one of <a href="http://rubydoc.info/github/jnicklas/capybara/master">Caybara</a>’s modules. </p>
+
+<p>If you look closely to <code>have_css</code> method you will see, it accepts one or more <a href="http://rubydoc.info/github/jnicklas/capybara/master/Capybara/Query">options</a>, such as <code>:visible</code> </p>
+
+<div class="highlight"><pre><code class="ruby"><span class="k">def</span> <span class="nf">have_css</span><span class="p">(</span><span class="n">css</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="p">{})</span>
+  <span class="no">HaveSelector</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:css</span><span class="p">,</span> <span class="n">css</span><span class="p">,</span> <span class="n">options</span><span class="p">)</span>
+<span class="k">end</span></code></pre></div>
+
+<h3 id="solution">Solution</h3>
+
+<p>Since I know the page title is visible <code>visible: true</code> and my default capybara <code>rack_test</code> driver only sees invisible elements <code>visible: false</code>. I know i have to make make sure my element is not visible <code>visible: false</code>.</p>
+
+<p>Here is my test with the fix:</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">feature</span> <span class="s2">&quot;view home page&quot;</span> <span class="k">do</span>
+ 	<span class="n">scenario</span> <span class="s2">&quot;user see page title&quot;</span> <span class="k">do</span>
+ 	   <span class="n">visit</span> <span class="n">root_path</span>
+ 	   <span class="n">expect</span><span class="p">(</span><span class="n">page</span><span class="p">)</span><span class="o">.</span><span class="n">to</span> <span class="n">have_css</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="ss">text</span><span class="p">:</span> <span class="s1">&#39;Birds&#39;</span><span class="p">,</span> <span class="ss">visible</span><span class="p">:</span> <span class="kp">false</span>
+ 	 <span class="k">end</span> 
+<span class="k">end</span></code></pre></div>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>If you chose rack test as your test driver then you would face issues with elements visibility. I would recommend using <a href="https://github.com/jnicklas/capybara#selenium">Selenium</a>, where it has no issue with visibility and it has Firefox already installed and you are ready to test.</p>
+
+<p>Happy Coding, eh! ;)</p>
+
+          <footer class="entry-meta">
+            <span class="entry-tags"><a href="http://ahmednadar.github.io/tags/#Capybara" title="Pages tagged Capybara" class="tag">Capybara</a><a href="http://ahmednadar.github.io/tags/#Rspec" title="Pages tagged Rspec" class="tag">Rspec</a><a href="http://ahmednadar.github.io/tags/#Rails" title="Pages tagged Rails" class="tag">Rails</a><a href="http://ahmednadar.github.io/tags/#Test" title="Pages tagged Test" class="tag">Test</a><a href="http://ahmednadar.github.io/tags/#TDD" title="Pages tagged TDD" class="tag">TDD</a></span>
+            
+            <div class="social-share">
+              <ul class="socialcount socialcount-small inline-list">
+                <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://ahmednadar.github.io/12/09/2013/overwrite-how-Capybara-ignores-hidden-elements/" title="Share on Facebook"><span class="count"><i class="icon-facebook-sign"></i> Like</span></a></li>
+                <li class="twitter"><a href="https://twitter.com/intent/tweet?text=http://ahmednadar.github.io/12/09/2013/overwrite-how-Capybara-ignores-hidden-elements/" title="Share on Twitter"><span class="count"><i class="icon-twitter-sign"></i> Tweet</span></a></li>
+                <li class="googleplus"><a href="https://plus.google.com/share?url=http://ahmednadar.github.io/12/09/2013/overwrite-how-Capybara-ignores-hidden-elements/" title="Share on Google Plus"><span class="count"><i class="icon-google-plus-sign"></i> +1</span></a></li>
+              </ul>
+            </div><!-- /.social-share -->
+          </footer>
+        </div><!-- /.entry-content -->
+        <section id="disqus_thread"></section><!-- /#disqus_thread -->
+        
+        <div class="read-more">
+          
+            <div class="read-more-header">
+              <a href="http://ahmednadar.github.io/30/08/2013/give-me-a-ball-and-i-will-do-goodness/" class="read-more-btn">Read More</a>
+            </div><!-- /.read-more-header -->
+            <div class="read-more-content">
+              <h3><a href="http://ahmednadar.github.io/12/11/2013/the-joy-of-using-tdd/" title="The joy of using TDD">The joy of using TDD</a></h3>
+              <p>I wanted to practice RSpec more and feel that joy of TDD. So I start with simple tests aiming to cover and learn more about RSpec. During...&hellip; <a href="http://ahmednadar.github.io/12/11/2013/the-joy-of-using-tdd/">Continue reading</a></p>
+            </div><!-- /.read-more-content -->
+          
+          <div class="read-more-list">
+            
+              <div class="list-item">
+                <h4><a href="http://ahmednadar.github.io/20/10/2013/how-to-include-bootstrap-glyphicons-to-link_to-rails/" title="How to include Bootstrap glyphicons to 'link_to' Rails">How to include Bootstrap glyphicons to 'link_to' Rails</a></h4>
+                <span>Published on 20 October, 2013</span>
+              </div><!-- /.list-item -->
+            
+              <div class="list-item">
+                <h4><a href="http://ahmednadar.github.io/30/08/2013/give-me-a-ball-and-i-will-do-goodness/" title="Give Me a Ball and I Will Do Goodness">Give Me a Ball and I Will Do Goodness</a></h4>
+                <span>Published on 30 August, 2013</span>
+              </div><!-- /.list-item -->
+            
+          </div><!-- /.read-more-list -->
+          
+        </div><!-- /.read-more -->
+      </article>
+    </div><!-- /#main -->
+    <div class="footer-wrapper">
+      <footer role="contentinfo">
+        <span>Copyright &copy; 2014 Ahmed Nadar.</span>
+<div class="social-icons">
+  <a href="http://twitter.com/ahmednadar" title="Ahmed Nadar on Twitter" target="_blank"><i class="icon-twitter icon-2x"></i></a>
+  <a href="http://github.com/ahmednadar" title="Ahmed Nadar on Github" target="_blank"><i class="icon-github icon-2x"></i></a>
+</div><!-- /.social-icons -->
+
+      </footer>
+    </div><!-- /.footer-wrapper -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://ahmednadar.github.io/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="http://ahmednadar.github.io/assets/js/scripts.min.js"></script>
+
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46048477-1', 'auto');  
+  ga('require', 'linkid', 'linkid.js');
+  ga('send', 'pageview');
+</script>
+
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'disqus_ahmednadar'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>	        
+  </body>
+</html>

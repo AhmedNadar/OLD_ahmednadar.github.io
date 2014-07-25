@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://ahmednadar.github.io</loc>
+    </url>
+    
+    
+    <url>
+        <loc>http://ahmednadar.github.io/404.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/about/</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/feed.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/index.html</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/posts/</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/sitemap.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/tags/</loc>
+    </url>
+    
+
+    
+    <url>
+        <loc>http://ahmednadar.github.io/12/11/2013/the-joy-of-using-tdd/</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/20/10/2013/how-to-include-bootstrap-glyphicons-to-link_to-rails/</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/12/09/2013/overwrite-how-Capybara-ignores-hidden-elements/</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/30/08/2013/give-me-a-ball-and-i-will-do-goodness/</loc>
+    </url>
+    
+    <url>
+        <loc>http://ahmednadar.github.io/22/08/2013/learning-the-right-way/</loc>
+    </url>
+    
+</urlset>

@@ -3,7 +3,7 @@ layout: post
 title: "Overwrite how Capybara ignores hidden elements"
 date: 2013-09-12 11:22:54 -0400
 comments: true
-tags: [Capybara, Rspec, Rails, Test, TDD]
+tags: [Capybara, Rspec, Rails, Test, TDD, tips]
 ---
 
 Working with [Caybara](http://rubydoc.info/github/jnicklas/capybara/master) is fun and joy for me as an early web designer and front-end developer. I always care about the user experience -[UX](https://en.wikipedia.org/wiki/User_experience)- and how user would interact with the page.
