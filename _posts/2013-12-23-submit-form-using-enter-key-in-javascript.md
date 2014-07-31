@@ -41,13 +41,13 @@ In order to give user the ability to click the Enter key on the keyboard to subm
 Here is simple and easy solution.
 
 {% highlight javascript %}
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 		$("#contact_form *").keypress(function (e) {
   		if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
 	      	$(this).parents('#contact_form').find('#submit_form').eq(0).focusin().click();
   		}
   	});
-</script>
+</script> -->
 {% endhighlight %}
 
 
