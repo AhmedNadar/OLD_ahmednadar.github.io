@@ -1,4 +1,4 @@
-###This is the data for my blog
+### This is the data for my blog [ahmednadar.github.io](http://ahmednadar.github.io/)
 
 It is automatically transformed by [Jekyll](http://jekyllrb.com) into a static site whenever I push this repository to GitHub.
 
