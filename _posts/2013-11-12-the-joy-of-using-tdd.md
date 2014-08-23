@@ -6,6 +6,8 @@ comments: true
 tags: [Rails, RSpec, TDD]
 ---
 
+**Good Day!**
+
 I wanted to practice RSpec more and feel that joy of TDD. So I start with simple tests aiming to cover and learn more about RSpec. During the practice I learned more about [Matcher](https://www.relishapp.com/rspec/rspec-expectations/docs/built-in-matchers), [Exceptions](https://www.relishapp.com/rspec/rspec-expectations/v/2-5/docs/built-in-matchers/raise-error-matcher), missing method and the thinking process of solving an issue using test first.
 
 

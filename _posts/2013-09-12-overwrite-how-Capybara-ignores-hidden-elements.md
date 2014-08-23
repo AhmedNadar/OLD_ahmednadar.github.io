@@ -6,6 +6,8 @@ comments: true
 tags: [Capybara, Rspec, Rails, Test, TDD, tips]
 ---
 
+**Good Day!**
+
 Working with [Caybara](http://rubydoc.info/github/jnicklas/capybara/master) is fun and joy for me as an early web designer and front-end developer. I always care about the user experience -[UX](https://en.wikipedia.org/wiki/User_experience)- and how user would interact with the page.
 
 While I was working on simple test using Capybara, the test didn't pass although I have what is require for test to pass. Here is my test:

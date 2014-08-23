@@ -6,6 +6,7 @@ comments: true
 tags: [jQuery, JavaScript, HTML, tips]
 ---
 
+**Good Day!**
 
 While I'm I was working on the designing an existing form, I found it's been constructed as bunch for input elements except the submit 'button'. It wasn't an input or a button element, rather it was a DIV that should have the look and feel for rounded corner button. 
 

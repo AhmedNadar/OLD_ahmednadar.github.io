@@ -7,6 +7,8 @@ tags: [Learn, Rails, Ruby]
 
 ---
 
+**Good Day!**
+
 <p>When i decide to learn Ruby and Ruby on Rails, I have done good search for what is the best way to learn RoR. The community online is marvellous. Since RoR is kind of new kid in the programming framework area, I have found many resources and different way to learn. </p>
 
 <p>I like learning from videos, it does help clearing up some area it’s hard to be describe if its written lesson.. Beside watching live code is exciting. But in the same time, it has its cons, which its one way teaching. No communication with the author or other learners like me.</p>

@@ -6,6 +6,8 @@ comments: true
 tags: [Rails, Bootstrap, Glyphicons, tips]
 ---
 
+**Good Day!**
+
 ## How to include Bootstrap glyphicons to link_to 
 
 ## Idea

@@ -6,6 +6,7 @@ comments: true
 tags: [JavaScript, HTML, CSS, jQuery]
 ---
 
+**Good Day!**
 
 I was working on the front-end part of a page which requires creating a modal/dialog for a specific section on the page. By default I was thinking about [jQuery dialog](http://jqueryui.com/dialog/). I have used it many times, reliable, easy to use and its part of the awesomeness jQuery UI. 
 
