@@ -3,7 +3,7 @@ layout: post
 title: "Overwrite how Capybara ignores hidden elements"
 date: 2013-09-12 11:22:54 -0400
 comments: true
-tags: [Capybara, Rspec, Rails, Test, TDD, tips]
+tags: [Capybara, Rspec, Rails, Test, TDD, Tips]
 ---
 
 **Good Day!**

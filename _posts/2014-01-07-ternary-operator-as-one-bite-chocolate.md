@@ -3,7 +3,7 @@ layout: post
 title: "Ternary Operator as one bite chocolate"
 date: 2014-01-07 01:32:54 -0500
 comments: true
-tags: [ruby, rails, code]
+tags: [Ruby, Rails]
 ---
 
 **Good Day!**

@@ -3,7 +3,7 @@ layout: post
 title: "Submit form using Enter key in Java Script"
 date: 2013-12-23 01:32:54 -0500
 comments: true
-tags: [jQuery, JavaScript, HTML, tips]
+tags: [jQuery, JavaScript, HTML, Tips]
 ---
 
 **Good Day!**

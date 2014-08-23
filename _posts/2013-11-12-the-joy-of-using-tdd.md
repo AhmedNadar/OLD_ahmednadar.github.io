@@ -3,7 +3,7 @@ layout: post
 title: "The joy of using TDD"
 date: 2013-11-12 05:10:19 -0500
 comments: true
-tags: [Rails, RSpec, TDD]
+tags: [Ruby, Rails, RSpec, TDD]
 ---
 
 **Good Day!**

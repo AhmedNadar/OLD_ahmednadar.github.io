@@ -3,7 +3,7 @@ layout: post
 title: "How to include Bootstrap glyphicons to 'link_to' Rails"
 date: 2013-10-20 10:12:34 -0500
 comments: true
-tags: [Rails, Bootstrap, Glyphicons, tips]
+tags: [Rails, Bootstrap, Glyphicons, Tips]
 ---
 
 **Good Day!**
