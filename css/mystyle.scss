@@ -1,0 +1,15 @@
+
+
+/* modify post.html page */
+.entry-title h5 {
+  margin: 12px 0;
+}
+#post-index article ul li:hover {
+  background-color: #e9e9e9;
+}
+#post-index article ul li {
+  margin: 0;
+  list-style-type: none;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}

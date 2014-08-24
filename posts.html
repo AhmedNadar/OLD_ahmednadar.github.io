@@ -7,6 +7,7 @@ description: "An archive of posts."
 
 {% for post in site.posts %}
     {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture this_month %}{{ post.date | date: "%B %d" }}{% endcapture %}
     {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
 
     {% if forloop.first %}
@@ -14,7 +15,12 @@ description: "An archive of posts."
       <h2 id="{{ this_year }}-ref"><i class="icon-calendar"></i>&nbsp; &nbsp;{{ this_year }}</h2>
       <ul>
     {% endif %}
-      <li class="entry-title"><i class="icon-link"></i>&nbsp; &nbsp;<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+      <li class="entry-title">
+        <h5 id="{{ this_month }}-ref"><i class="icon-pencil"></i>&nbsp; &nbsp; On &nbsp;<em>{{ this_month }}</em>&nbsp;I wrote:</h5>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      </li>
+        
+
     {% if forloop.last %}
       </ul>
     </article>
