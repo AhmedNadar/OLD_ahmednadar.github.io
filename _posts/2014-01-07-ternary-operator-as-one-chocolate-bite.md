@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ternary Operator as one bite chocolate"
+title: "Ternary Operator as one chocolate bite"
 date: 2014-01-07 01:32:54 -0500
 comments: true
 tags: [Ruby, Rails]
