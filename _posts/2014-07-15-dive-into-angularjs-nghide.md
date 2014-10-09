@@ -3,7 +3,7 @@ layout: post
 title: "Dive into AngularJS | ngHide"
 date: 2014-07-15 03:36:27 -0500
 comments: true
-tags: [Angular]
+tags: [Angular, ngHide]
 ---
 
 **Good Day!**
@@ -12,7 +12,7 @@ One of the things I like being a developer is working with the DOM (Document Obj
 
 ### What are Directives?
 
-According to Angular DOC, Directives are:
+According to Angular DOC, [Directives](https://docs.angularjs.org/guide/directive) are:
 
 > Markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell AngularJS's HTML compiler ($compile) to attach a specified behaviour to that DOM element or even transform the DOM element and its children.
 > 
@@ -30,13 +30,13 @@ What else we can say about Directives:
 One of these directive I want to talk about it is **ngHide**. 
 It's purpose is show or hide a given HTML element based on what is been provided by the `ngHide` attribute.
 
-```
-	<span>Hide:</span> <input type="checkbox" data-ng-model="isHidden">
-	<br>
-	<div data-ng-hide="isHidden">
-		<span>Name:</span> <input type="text" ng-model="name" />{{name}}
-	</div>
-```
+{% highlight html linenos %}
+<span>Hide:</span> <input type="checkbox" data-ng-model="isHidden">
+<br>
+<div data-ng-hide="isHidden">
+	<span>Name:</span> <input type="text" ng-model="name" />{{name}}
+</div>
+{% endhighlight %}
 
 When the `checkbox` element is been selected, the second DIV HTML element is hidden by adding a `ng-hide` CSS class onto the element. The CSS class sets the element display to none `display: none;` using an `!important` flag.
 
