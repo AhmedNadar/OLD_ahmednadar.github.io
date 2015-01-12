@@ -1,4 +1,4 @@
-/*! 
+/*!
 // ===========================================================
 // HPSTR Jekyll Theme
 // By: Michael Rose
@@ -276,7 +276,8 @@ a {
 }
 
 body {
-  font-family: 'Lato', Calibri, Arial, sans-serif;
+  /*font-family: 'Lato', Calibri, Arial, sans-serif;*/
+  font-family: font-family: 'Open Sans', sans-serif;
   color: #222222;
 }
 
@@ -286,7 +287,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Lato', Calibri, Arial, sans-serif;
+  /*font-family: 'Lato', Calibri, Arial, sans-serif;*/
+  font-family: font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -675,7 +677,7 @@ pre::-webkit-scrollbar-thumb:horizontal {
 .CodeRay {
   margin-bottom: 1.5em;
   font-family: monospace;
-  font-size: 12px;
+  font-size: 14px;
   font-size: 0.75rem;
   line-height: 2.1667;
   color: #d0d0d0;
@@ -1617,10 +1619,10 @@ svg:not(:root) {
   display: none;
 }
 
-/* 
+/*
 When a submenu is openend, we will hide all li siblings.
 For that we give a class to the parent menu called "dl-subview".
-We also hide the submenu link. 
+We also hide the submenu link.
 The opened submenu will get the class "dl-subviewopen".
 All this is done for any sub-level being entered.
 */
@@ -3775,7 +3777,8 @@ body {
 
 .entry-content p > a,
 .entry-content li > a {
-  border-bottom: 1px dotted #a2a2a2;
+  /*border-bottom: 1px dotted #a2a2a2;*/
+  border-bottom: 1px dotted #336699;
 }
 
 .entry-content p > a:hover,
@@ -3868,7 +3871,7 @@ body {
 }
 
 @media only screen and (min-width: 62.5em) {
-  
+
 }
 
 .feature .header-title h2 {
